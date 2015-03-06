@@ -4,7 +4,7 @@
 html, body, div, span, h1, h2, h3, h4, h5, h6, hr, p, a, samp, strong, blockquote, dl, dt, dd, ul, ol, li, pre, form, label, table, tbody, tr, th, td, img { border:0; margin:0; padding:0; font-size:100%; }
 input, textarea, select { margin:0; padding:0; }
 a { text-decoration:none; outline:none; }
-a:hover { text-decoration:underline; }
+a:hover { text-decoration:none; }
 a:active { star:expression(this.onFocus=this.blur()); }
 a:focus { outline:0; }
 textarea, select { background:#fff; resize:none; }
@@ -37,16 +37,17 @@ table { border-collapse: collapse; border-spacing: 0; }
 .tr span {  float: left;  padding-top: 15px;  }
 /*.menu{ height:87px;background:#fff; overflow:hidden; margin-left:auto; margin-right:auto;}*/
 .f2{ font-size: 16px;}
-.menu .nav{height:51px;overflow:hidden;margin-top:24px;float:right;}
+.menu .nav{height:51px;overflow:hidden;padding: 10px;float:right;}
 .menu .nav li{float:left;list-style:none;}
 .menu .nav li a{display:block; height:51px; padding:0 15px; line-height:51px; color:gray; text-decoration:none; position:relative; overflow:hidden;}
 .menu .nav li a:hover,.menu .nav li a.current{background:url(../img/nav_bg.gif) no-repeat center;}
 .menu .nav li a.f1{font-size:15px; font-family:Microsoft Yahei; color:#333;}
 .menu .nav li tt{display:block; float:right; background:url(../img/fgx.gif) no-repeat; width:11px; height:16px;margin-top:18px;}
-.menu .nav li .box{width:100%; position:absolute;height:59px; /*top:87px;*/left:0;padding-left:200px;background:#6E6E88;display:none; z-index:9999; opacity:0.6}
+.menu .nav li .box{width:100%; position:absolute;height:59px; top:130px;left:0;padding-left:200px;background:#6E6E88;display:none; z-index:9999; opacity:0.6}
 .menu .nav li .box a{display:block;height:59px;float:left;color:#ddd;line-height:59px;border:none;background:none;font-size:15px;}
 .menu .nav li .box a:hover{text-decoration:none;color:#fff}
-.head_nav{ width: 1000px; margin: 0 auto;}
+.head_nav{ width: 980px; margin: 0 auto; }
+.head_nav .logo{ height: 51px;width: 200px;padding: 10px}
 
 .banners{height:59px; background:#002496;}
 .ban{width:960px;margin:auto; line-height:59px; }
@@ -153,8 +154,17 @@ a {text-decoration: none;  }
 .ad_001_img01{ width: 472px; float: left; padding: 6px;padding-top: 55px}
 .ad_001_img02{width: 472px; float: left;padding: 6px;padding-top: 55px}
 /*导航条*/
-.huan_title{ width:980px; margin: 0 auto;   border-bottom: 1px solid #cacaca;height: 45px; font-size: 20px; text-align: center;padding: 6px}
-.huan_bt{ float: left; width: 195px;}
+.huan_title{ width:980px; margin: 0 auto;  height: 45px; font-size: 20px; text-align: center;padding: 6px}
+.huan_bt{ float: left; width: 185px;height: 40px;padding: 5px}
+.huan_title a:hover{color: #F37914;}
+
+#huan_1{ border-right: 1px solid #cacaca; border-bottom: 1px solid #cacaca;}
+#huan_2{ border-right: 1px solid #cacaca; border-bottom: 1px solid #cacaca;}
+#huan_3{ border-right: 1px solid #cacaca; border-bottom: 1px solid #cacaca;}
+#huan_4{ border-right: 1px solid #cacaca; border-bottom: 1px solid #cacaca;}
+#huan_5{border-bottom: 1px solid #cacaca;}
+
+
 .huan_cen{width: 980px; margin: 0 auto;overflow: hidden;display: none;height: 500px;}
 .huan_cen dt { text-align: center; font-size: 20px; padding: 10px;}
 .huan_cen ul li {
@@ -204,6 +214,7 @@ a {text-decoration: none;  }
 .stbox05box li a:hover ins {
     background: url("../img/png08.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     padding: 6px 0 0 10px;
+
 }
 .stbox05box li a ins {
     background: url("../img/png07.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -213,9 +224,11 @@ a {text-decoration: none;  }
     height: 44px;
     padding: 6px 0 0 10px;
     width: 152px;
+    text-decoration:none;
 }
 .stbox05box li a:hover ins p {
     color: #000;
+
 }
 .stbox05box li a ins p {
     color: #747474;
@@ -223,6 +236,7 @@ a {text-decoration: none;  }
     line-height: 17px;
     overflow: hidden;
     width: 147px;
+
 }
 .stbox05box li a img {
     display: block;
